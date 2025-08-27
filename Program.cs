@@ -11,13 +11,15 @@ namespace Aula03Colecoes
 
         static void Main(string[] args)
         {
-            CriarLista();
+            // CriarLista();
             // ObterPorNome(); // Exercício 1 
             // ObterFuncionariosRecentes(); // Exercício 2
             // ObterEstatisticas(); // Exercício 3 
             // ValidarSalarioAdmissao(); // Exercício 4
             // ValidarNome(); // Exercício 5
-            ObterPorTipo(); // Exercício 6 */
+            // ObterPorTipo(); // Exercício 6 
+            // CalcularDescontoINSS();
+            DetalharData();
 
         }
 
@@ -229,6 +231,51 @@ namespace Aula03Colecoes
             f6.Salario = 300.000M;
             f6.TipoFuncionario = TipoFuncionarioEnum.CLT;
             List.Add(f6);
+        }
+
+        public static void CalcularDescontoINSS() 
+        {
+            Console.WriteLine("Digite o seu salário: ");
+            double salario = double.Parse(Console.ReadLine());
+            double desconto;
+
+            if (salario <= 1212.00)
+            {
+                desconto = salario * 0.075;
+            } else if (salario <= 2427.35)
+            {
+                desconto = salario * 0.09;
+            } else if (salario <= 3641.03)
+            {
+                desconto = salario * 0.12;
+            } else if (salario <= 7087.22) 
+            {
+                desconto = salario * 0.14;
+            } else 
+            {
+                desconto = salario * 0.14;
+            }
+
+            double salarioLiquido = salario - desconto;
+            Console.WriteLine($"Valor do desconto do INSS: R$ {desconto:F2}");
+            Console.WriteLine($"Salário líquido: R$ {salarioLiquido:F2}");
+        }
+
+        public static void DetalharData()
+        {
+            Console.WriteLine("Digite uma data (dd/mm/yyyy): ");
+            DateTime data = DateTime.Parse(Console.ReadLine());
+
+            string weekDay = data.ToString("dddd");
+            string month = data.ToString("MMMM");
+
+            Console.WriteLine($"Dia da semana: {weekDay}");
+            Console.WriteLine($"Mês: {month}");
+
+            if (data.DayOfWeek == DayOfWeek.Sunday)
+            {
+                Console.WriteLine($"Aproveite seu domingo! Hora atual: {DateTime.Now:HH:mm:ss}");
+            }
         }
     }
 }
