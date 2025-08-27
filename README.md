@@ -27,7 +27,9 @@ EXERCÍCIOS Funcionário:
 <img width="987" height="178" alt="image" src="https://github.com/user-attachments/assets/14cbdc1a-945c-4215-8c7c-1341f22cc992" />
 <img width="588" height="511" alt="image" src="https://github.com/user-attachments/assets/05d3f6f3-e960-48d6-a782-946cbd21f4a4" />
 
-EXERCÍCIO Inss
+
+EXERCÍCIO Inss:
+
 
 
 
