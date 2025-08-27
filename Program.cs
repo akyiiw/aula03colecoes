@@ -12,11 +12,11 @@ namespace Aula03Colecoes
         static void Main(string[] args)
         {
             CriarLista();
-            /* ObterPorNome(); // Exercício 1 
-            ObterFuncionariosRecentes(); // Exercício 2
-            ObterEstatisticas(); // Exercício 3 
-            ValidarSalarioAdmissao(); // Exercício 4
-            ValidarNome(); // Exercício  
+            // ObterPorNome(); // Exercício 1 
+            // ObterFuncionariosRecentes(); // Exercício 2
+            // ObterEstatisticas(); // Exercício 3 
+            // ValidarSalarioAdmissao(); // Exercício 4
+            // ValidarNome(); // Exercício 5
             ObterPorTipo(); // Exercício 6 */
 
         }
@@ -52,6 +52,7 @@ namespace Aula03Colecoes
                 dados += string.Format("Admissao: {0:dd/MM/yyyy} \n", List[i].DataAdmissao);
                 dados += string.Format("Salario: {0:c2} \n", List[i].Salario);
                 dados += string.Format("Tipo: {0} \n",  List[i].TipoFuncionario);
+                dados += "\n";
             }
             Console.WriteLine(dados);  
         }
@@ -177,7 +178,7 @@ namespace Aula03Colecoes
         {
             Funcionario f1 = new Funcionario();
             f1.Id = 1;
-            f1.Nome = "Rudo";
+            f1.Nome = "Cavasoz";
             f1.Cpf = "12345678910";
             f1.DataAdmissao = DateTime.Parse("01/01/2000");
             f1.Salario = 100.000M;
@@ -186,7 +187,7 @@ namespace Aula03Colecoes
 
             Funcionario f2 = new Funcionario();
             f2.Id = 2;
-            f2.Nome = "Maka";
+            f2.Nome = "Kaiser";
             f2.Cpf = "01987654321";
             f2.DataAdmissao = DateTime.Parse("30/06/2002");
             f2.Salario = 150.000M;
@@ -195,7 +196,7 @@ namespace Aula03Colecoes
 
             Funcionario f3 = new Funcionario();
             f3.Id = 3;
-            f3.Nome = "Crona";
+            f3.Nome = "Rin";
             f3.Cpf = "135792468";
             f3.DataAdmissao = DateTime.Parse("01/11/2003");
             f3.Salario = 70.000M;
@@ -204,7 +205,7 @@ namespace Aula03Colecoes
 
             Funcionario f4 = new Funcionario();
             f4.Id = 4;
-            f4.Nome = "Soul Eater";
+            f4.Nome = "Bachira";
             f4.Cpf = "246813579";
             f4.DataAdmissao = DateTime.Parse("15/09/2005");
             f4.Salario = 80.000M;
@@ -213,7 +214,7 @@ namespace Aula03Colecoes
 
             Funcionario f5 = new Funcionario();
             f5.Id = 5;
-            f5.Nome = "Mob";
+            f5.Nome = "Isagi";
             f5.Cpf = "246813579";
             f5.DataAdmissao = DateTime.Parse("20/10/1998");
             f5.Salario = 90.000M;
