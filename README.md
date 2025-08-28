@@ -1,4 +1,4 @@
-﻿# Pietro Borges
+﻿# Pietro Borges e Artur Albion
 
 EXERCÍCIOS Funcionário:
 
@@ -37,6 +37,7 @@ EXERCÍCIO Inss:
 2. DetalharData
 <img width="1231" height="450" alt="image" src="https://github.com/user-attachments/assets/2c863af7-b7e6-4638-a346-3f1c409c7f7e" />
 <img width="630" height="158" alt="image" src="https://github.com/user-attachments/assets/c708ebab-43d2-4eec-9639-77924d469397" />
+
 
 
 
